@@ -116,9 +116,6 @@ in
   users.users.chenhsi = {
     derivations = "Chen Hsi"
     hashedPassword = "$6$8/ZJ0jr/BWf4at92$PmRuEML2eiCHcRe/vuc54xgSkU.T7bO6ljUqczhkpw3kAv1mTl.PLMOhRuG.yIiEklJGwcHq3szit4PPkZaEM0";
-    extraGroups = [
-      "sudo"
-    ];
   };
 
 }
