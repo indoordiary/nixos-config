@@ -13,7 +13,7 @@
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
   boot.initrd.availableKernelModules = [
-    "nvme"
+    "sda"
     "xhci_pci"
     "usb_storage"
     "sd_mod"
@@ -23,7 +23,7 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" = {
-    device = "/dev/disk/by-uuid/2ec8d184-618c-44b2-a0c3-7fe70b0d6b71";
+    device = "/dev/sda3";
     fsType = "btrfs";
     options = [
       "subvol=root"
@@ -32,7 +32,7 @@
   };
 
   fileSystems."/home" = {
-    device = "/dev/disk/by-uuid/2ec8d184-618c-44b2-a0c3-7fe70b0d6b71";
+    device = "/dev/sda3";
     fsType = "btrfs";
     options = [
       "subvol=home"
@@ -41,7 +41,7 @@
   };
 
   fileSystems."/nix" = {
-    device = "/dev/disk/by-uuid/2ec8d184-618c-44b2-a0c3-7fe70b0d6b71";
+    device = "/dev/sda3";
     fsType = "btrfs";
     options = [
       "subvol=nix"
@@ -51,11 +51,11 @@
   };
 
   fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/5EE8-9DD7";
+    device = "/dev/sda1";
     fsType = "vfat";
   };
 
-  swapDevices = [ { device = "/dev/disk/by-uuid/68ce99d7-5cd3-4f1e-aee2-3d00514fdd3b"; } ];
+  swapDevices = [ { device = "/dev/sda2"; } ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's

@@ -45,7 +45,6 @@
 
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
-    #WARN: private repo
     monaco = {
       url = "github:thep0y/monaco-nerd-font";
       inputs.nixpkgs.follows = "nixpkgs";
