@@ -9,13 +9,14 @@
     isNormalUser = true;
     extraGroups = [
       "wheel"
+      "networkmanager"
       "video"
       "audio"
     ];
   };
 
   security = {
-    sudo.wheelNeedsPassword = false;
+    sudo.wheelNeedsPassword = true;
     # allow wayland lockers to unlock the screen
     pam.services = {
       hyprlock.text = "auth include login";
