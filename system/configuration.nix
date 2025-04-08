@@ -117,7 +117,7 @@ in
   users.users.chenhsi = {
     isNormalUser = true;
     descriptions = "Chen Hsi";
-    initalPassword = "123456";
+    initialPassword = "123456";
   };
 
 }
