@@ -8,8 +8,8 @@
   networking = {
     hostName = "nixos";
     proxy = {
-      default = "127.0.0.1,localhost";
-      Proxy = "http://localhost:7890";
+      default = "http://10.0.0.1:1080";
+      noProxy = "127.0.0.1,localhost";
     };
     networkmanager = {
       enable = true;
