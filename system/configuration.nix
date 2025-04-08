@@ -68,6 +68,7 @@ in
       pciutils
       vim
       neofetch
+      pkgs.qq
     ];
   };
 
