@@ -14,7 +14,7 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-label/NixOS_Btrfs";
+    { device = "/dev/disk/by-uuid/8fb09c45-6a3e-4ad9-872fa508a5c632c5";
       fsType = "btrfs";
       options = [
         "subvol=root"
@@ -23,7 +23,7 @@
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-label/NixOS_Btrfs";
+    { device = "/dev/disk/by-uuid/8fb09c45-6a3e-4ad9-872fa508a5c632c5";
       fsType = "btrfs";
       options = [
         "subvol=home"
@@ -32,7 +32,7 @@
     };
 
   fileSystems."/nix" =
-    { device = "/dev/disk/by-label/NixOS_Btrfs";
+    { device = "/dev/disk/by-uuid/8fb09c45-6a3e-4ad9-872fa508a5c632c5";
       fsType = "btrfs";
       options = [ 
         "subvol=nix"
@@ -42,11 +42,11 @@
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-label/N_EFI";
+    { device = "/dev/disk/by-uuid/161E-3012";
       fsType = "vfat";
     };
 
-  swapDevices = [ { device = "/dev/disk/by-label/Nixos_Swap"; } ];
+  swapDevices = [ { device = "/dev/disk/by-uuid/111a7616ace8-4abe-a001-58be2ae0eea4"; } ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
