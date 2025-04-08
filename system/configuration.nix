@@ -116,7 +116,7 @@ in
   users.groups.chenhsi = { };
   users.users.chenhsi = {
     isNormalUser = true;
-    descriptions = "Chen Hsi";
+    description = "Chen Hsi";
     initialPassword = "123456";
   };
 
