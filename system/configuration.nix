@@ -69,6 +69,7 @@ in
       vim
       neofetch
       pkgs.qq
+      pkgs.qqmusic
     ];
   };
 
