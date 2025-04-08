@@ -113,7 +113,7 @@ in
     stateVersion = "24.05";
   };
 
-  users.grops.chenhsi = { };
+  users.groups.chenhsi = { };
   users.users.chenhsi = {
     isNormalUser = true;
     descriptions = "Chen Hsi";
