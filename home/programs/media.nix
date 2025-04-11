@@ -3,7 +3,6 @@
   home = {
     packages = with pkgs; [
       g4music
-      netease-cloud-music-gtk
       # ikun-music-desktop
       pavucontrol
     ];

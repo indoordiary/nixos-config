@@ -4,7 +4,7 @@
 
   profile = {
     terminal = "foot";
-    font = "MonoLisa";
+    font = "JetBrains Mono";
     darkMode = false;
     browser = "firefox";
     wallpaper = "${pkgs.wallpaper}/7qlsln.jpg";
@@ -31,7 +31,7 @@
       zed = true;
       vscode = true;
 
-      rust = true;
+      rust = false;
       go = false;
       node = true;
       zig = false;

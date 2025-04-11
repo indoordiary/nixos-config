@@ -1,5 +1,5 @@
 {
-  description = "Gallon's NixOS Configuration";
+  description = "ChenHsi's NixOS Configuration";
 
   nixConfig = {
     extra-substituters = [
@@ -40,11 +40,6 @@
 
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 
-    #WARN: private repo
-    monolisa = {
-      url = "git+ssh://git@github.com/wuliuqii/MonoLisa";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =

@@ -2,7 +2,7 @@
 {
   imports = [
     ../common
-    ../gallon.nix
+    ../chenhsi.nix
     ./hardware-configuration.nix
   ];
 }

@@ -19,7 +19,6 @@
 
       # monospace fonts
       jetbrains-mono
-      inputs.monolisa.packages.${pkgs.system}.monolisa
 
       # nerdfonts
       nerd-fonts.jetbrains-mono
@@ -38,8 +37,7 @@
           "Inter"
         ];
         monospace = [
-          # "JetBrains Mono"
-          "MonoLisa"
+          "JetBrains Mono"
         ];
         emoji = [ ];
       };

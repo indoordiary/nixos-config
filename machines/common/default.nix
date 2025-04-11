@@ -6,7 +6,7 @@ with lib;
     profile = {
       userName = mkOption {
         type = types.str;
-        default = "gallon";
+        default = "chenhsi";
       };
       userEmail = mkOption {
         type = types.str;

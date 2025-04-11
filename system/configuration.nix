@@ -105,9 +105,9 @@ in
 
   system = {
     autoUpgrade = {
-      enable = true;
+      enable = false;
       channel = "https://nixos.org/channels/nixos-unstable";
     };
-    stateVersion = "24.05";
+    stateVersion = "25.05";
   };
 }
