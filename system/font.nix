@@ -23,6 +23,10 @@
       # nerdfonts
       nerd-fonts.jetbrains-mono
       nerd-fonts.symbols-only
+
+      #custom
+      inconsolata
+      fira-code
     ];
 
     fontconfig.defaultFonts =

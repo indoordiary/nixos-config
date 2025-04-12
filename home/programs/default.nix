@@ -36,6 +36,7 @@ in
     xdg-utils
     mako
     waybar
+    fontconfig
 
     # Social Apps
     telegram-desktop
