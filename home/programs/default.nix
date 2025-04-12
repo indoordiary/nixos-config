@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 let
   wechat = pkgs.makeDesktopItem {
     name = "wehcat";
