@@ -22,8 +22,8 @@ lib.mkIf config.optional.hypr.enable {
   wayland.windowManager.hyprland = {
     settings = {
       monitor = [
-        "DP-1, preferred, auto, 2"
-        "eDP-1, preferred, 0x0, auto"
+        "DP-1, 2560x1440@144Hz, auto, 1.25"
+        "eDP-1, 3200x2000@90Hz, 0x0, auto, 2"
       ];
 
       # mouse movements

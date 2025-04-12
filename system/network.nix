@@ -7,10 +7,10 @@
 {
   networking = {
     hostName = "nixos";
-    proxy = {
-      default = "http://localhost:20172";
-      noProxy = "127.0.0.1,localhost";
-    };
+    # proxy = {
+    #   default = "http://localhost:20172";
+    #   noProxy = "127.0.0.1,localhost";
+    # };
     networkmanager = {
       enable = true;
       dns = "systemd-resolved";

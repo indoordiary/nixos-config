@@ -16,6 +16,8 @@ lib.mkIf config.optional.hypr.enable {
 
     exec-once = [
       "fcitx5"
+      "waybar"
+      "mako"
       "hyprctl setcursor ${cursorName} ${toString pointer.size}"
       # "wl-paste --type text --watch cliphist store"
       # "wl-paste --type image --watch cliphist store"

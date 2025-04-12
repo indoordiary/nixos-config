@@ -62,8 +62,11 @@ in
     shells = with pkgs; [ fish ];
 
     systemPackages = with pkgs; [
+      vim
+      fastfetch
       git
       wget
+      xorg.xrandr
       nitch
       pciutils
     ];
