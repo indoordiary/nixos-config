@@ -54,5 +54,7 @@ in
     libsForQt5.kdenlive
 
     mihomo-party
+
+    inputs.zen-browser.packages."${system}".beta
   ];
 }
