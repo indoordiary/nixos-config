@@ -15,5 +15,6 @@
     };
   };
 
+  services.blueman.enable = true;
   services.xserver.videoDrivers = [ "amdgpu" ];
 }

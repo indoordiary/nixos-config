@@ -17,6 +17,8 @@ in
   ];
   config = lib.mkIf config.optional.hypr.enable {
     home.packages = with pkgs; [
+      waybar
+      mako
       networkmanagerapplet
       qt6.qtwayland
       libsForQt5.qt5.qtwayland

@@ -34,8 +34,6 @@ in
 
   home.packages = with pkgs; [
     xdg-utils
-    mako
-    waybar
 
     # Social Apps
     telegram-desktop

@@ -22,7 +22,7 @@ lib.mkIf config.optional.hypr.enable {
   wayland.windowManager.hyprland = {
     settings = {
       monitor = [
-        "DP-1, 2560x1440@144Hz, auto, 1.25"
+        "HDMI-A-1, 2560x1440@144Hz, auto, 1.25"
         "eDP-1, 3200x2000@90Hz, 0x0, auto, 2"
       ];
 
@@ -116,6 +116,7 @@ lib.mkIf config.optional.hypr.enable {
 
     extraConfig = ''
       # Resize submap
+      bind = ,XF86PowerOff, exec, systemctl suspend
       # will switch to a submap called resize
       bind = $altMod, r, submap, resize
       # will start a submap called "resize"
