@@ -64,6 +64,8 @@ in
     systemPackages = with pkgs; [
       vim
       fastfetch
+      unzip
+      unrar
       git
       wget
       xorg.xrandr
